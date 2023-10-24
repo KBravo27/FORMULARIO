@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+        body {background-color: rgba(138, 98, 202, 0.829);}
+        h3   {color: rgb(243, 243, 243);}
+        p    {color: brown;}
+        </style>
+    <title>Encuesta de Atencion al Cliente</title>
+</head>
+<body>
+    <h1>Encuesta de Atención al Cliente</h1>
+    <p>Por favor, ayúdanos a mejorar nuestros servicios completando esta encuesta.</p>
+
+    <form action="procesar_encuesta.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="correo">Correo :</label>
+        <input type="email" id="correo" name="correo" required><br><br>
+
+        <label for="satisfaccion">Satisfacción:</label>
+        <select id="satisfaccion" name="satisfaccion" required>
+            <option value="muy-satisfecho">Muy Satisfecho</option>
+            <option value="satisfecho">Satisfecho</option>
+            <option value="neutral">Neutral</option>
+            <option value="insatisfecho">Insatisfecho</option>
+        </select><br><br>
+
+        <label for="comentario">Comentario:</label><br>
+        <textarea id="comentario" name="comentario" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+
+
+    </form>
+</body>
+</html>
